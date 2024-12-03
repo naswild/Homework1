@@ -58,10 +58,5 @@ public class Homework1 {
         staff = staff + 94;
         var hoursNew = 640 / staff;
         System.out.println("Если в компании работает " + staff + " человек, то всего " + hoursNew + " часов работы может быть поделено между сотрудниками");
-
-
-
-
-
     }
 }
