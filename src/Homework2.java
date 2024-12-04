@@ -1,10 +1,10 @@
 public class Homework2 {
     public static void main(String[] args) {
      // Задача #1
-     int bananas = 2042530;
+     int bananas = 2_042_530;
      byte cats = 96;
-     short bottles = 21423;
-     long meters = 934726483L;
+     short bottles = 21_423;
+     long meters = 934_726_483L;
      float parts = 3.463F;
      double portions = 3.492837587;
      System.out.println("Значение переменной bananas с типом int = " + bananas);
@@ -15,11 +15,11 @@ public class Homework2 {
      System.out.println("Значение переменной portions с типом double = " + portions);
      // Задача #2
      float packs = 27.12F;
-     long people = 987678965549L;
+     long people = 987_678_965_549L;
      double tv = 2.786;
      short dogs = 569;
-     short box = - 159;
-     int pants = 27897;
+     short box = -159;
+     int pants = 27_897;
      byte book = 67;
      // Задача #3
      byte class1 = 23;
@@ -49,11 +49,15 @@ public class Homework2 {
      int brownAll = brown * classes;
      System.out.println("В школе, где " + classes + " классов, нужно " + whiteAll + " банок белой краски и " + brownAll + " банок коричневой краски");
      // Задача #6
+     byte bananaAmount = 5;
      byte bananaWeight = 80;
-     byte milkWeight = 105;
+     short milkMl = 200;
+     float milkGrWeight = 105f / 100;
      byte iceCreamWeight = 100;
+     byte iceCreamPacks = 2;
      byte eggWeight = 70;
-     int breakfastGr = (bananaWeight * 5) + (milkWeight * 2) + (iceCreamWeight * 2) + (eggWeight * 4);
+     byte eggAmount = 4;
+     float breakfastGr = (bananaWeight * bananaAmount) + (milkGrWeight * milkMl) + (iceCreamWeight * iceCreamPacks) + (eggWeight * eggAmount);
      float breakfastKg = breakfastGr / 1000f;
      System.out.println("Спортзавтрак весит " + breakfastGr + " гр или " + breakfastKg + " в кг");
      // Задача #7
@@ -61,18 +65,18 @@ public class Homework2 {
      short grPerDay2 = 500;
      byte kgToLose = 7;
      int grToLose = kgToLose * 1000;
-     int Days1 = grToLose / grPerDay1;
-     int Days2 = grToLose / grPerDay2;
-     int averageDays = (Days1 + Days2) / 2;
-     System.out.println("Если спортсмен каждый день будет терять по 250 грамм, то у него уйдет " + Days1 + " дней на похудение");
-     System.out.println("Если спортсмен каждый день будет терять по 500 грамм, то у него уйдет " + Days2 + " дней на похудение");
+     int days1 = grToLose / grPerDay1;
+     int days2 = grToLose / grPerDay2;
+     int averageDays = (days1 + days2) / 2;
+     System.out.println("Если спортсмен каждый день будет терять по 250 грамм, то у него уйдет " + days1 + " дней на похудение");
+     System.out.println("Если спортсмен каждый день будет терять по 500 грамм, то у него уйдет " + days2 + " дней на похудение");
      System.out.println("В среднем спортсмену потребуется " + averageDays + " дней, чтобы добиться результата похудения");
      // Задача #8
-     int salary1 = 67760;
-     int salary2 = 83690;
-     int salary3 = 76230;
+     int salary1 = 67_760;
+     int salary2 = 83_690;
+     int salary3 = 76_230;
      int percent = 10;
-     float percentInNumber = (percent/100f) + 1;
+     float percentInNumber = (percent / 100f) + 1;
      float salaryNew1 = salary1 * percentInNumber;
      float salaryNew2 = salary2 * percentInNumber;
      float salaryNew3 = salary3 * percentInNumber;
