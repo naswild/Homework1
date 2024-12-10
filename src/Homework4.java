@@ -27,18 +27,20 @@ public class Homework4 {
             System.out.println("У нас пока не готово приложение для вашей операционной системы");
         }
         // Задача #3
-        int year = 1769;
+        int year = 1700;
         boolean isLessThan1584 = year < 1584;
         boolean isDividedByFour = year % 4 == 0;
         boolean isDividedByFourHundred = year % 400 == 0;
-        boolean isDividedByHundred = year % 100 != 0;
+        boolean isNotDividedByHundred = year % 100 != 0;
         if (isLessThan1584) {
             System.out.println("Все года, которые были до 1584 года, являются невисокосными");
         } else if (isDividedByFour) {
             if (isDividedByFourHundred) {
                 System.out.println(year + " год является високосным");
-            } else if (isDividedByHundred) {
+            } else if (isNotDividedByHundred) {
                 System.out.println(year + " год является високосным");
+            } else {
+                System.out.println(year + " год не является високосным");
             }
         } else {
             System.out.println(year + " год не является високосным");
