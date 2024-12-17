@@ -65,7 +65,7 @@ public class Homework6 {
         System.out.println("Задача #6");
         double total4 = 15_000;
         month = 0;
-        while (month <= 108) {
+        while (month < 108) {
             total4 = total4 * percentage + total4;
             month++;
             if (month % 6 == 0) {
@@ -88,13 +88,11 @@ public class Homework6 {
         int yearNow = 2024;
         int pastYear = yearNow - 200;
         int nextYear = yearNow + 100;
-        int yearComet = 1824;
-        while (yearComet >= pastYear && yearComet <= nextYear) {
-            if (yearComet % 79 == 0) {
-                System.out.println(yearComet);
+        while (pastYear <= nextYear) {
+            if (pastYear % 79 == 0) {
+                System.out.println(pastYear);
             }
-            yearComet++;
+            pastYear++;
             }
         }
-
         }
